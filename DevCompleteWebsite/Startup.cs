@@ -20,6 +20,8 @@ namespace DevCompleteWebsite
                 .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
+
+            var x = new DodgyFileProvider.Class1();
         }
 
         public IConfigurationRoot Configuration { get; }
